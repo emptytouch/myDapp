@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* EtCoin / DApp_01 — 科技感深色背景 */
+@layer utilities {
+  .bg-etcoin-dapp {
+    background-color: #030712;
+    background-image:
+      linear-gradient(
+        rgba(34, 211, 238, 0.05) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        90deg,
+        rgba(34, 211, 238, 0.05) 1px,
+        transparent 1px
+      ),
+      radial-gradient(
+        ellipse 110% 70% at 50% -18%,
+        rgba(34, 211, 238, 0.22),
+        transparent 55%
+      ),
+      radial-gradient(
+        ellipse 55% 90% at 100% 45%,
+        rgba(129, 140, 248, 0.16),
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse 45% 80% at 0% 60%,
+        rgba(8, 145, 178, 0.12),
+        transparent 48%
+      ),
+      linear-gradient(
+        165deg,
+        #071018 0%,
+        #030712 45%,
+        #0a1628 78%,
+        #050a14 100%
+      );
+    background-size:
+      48px 48px,
+      48px 48px,
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      100% 100%;
+    background-repeat: repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  }
+
+  .text-gradient-tech {
+    background: linear-gradient(
+      115deg,
+      #67e8f9 0%,
+      #22d3ee 35%,
+      #818cf8 70%,
+      #a5b4fc 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+:root {
+  --background: #030712;
+  --foreground: #e2e8f0;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}

@@ -1,0 +1,81 @@
+# OS / 编辑器
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# 日志与临时文件
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+
+# 环境变量（常含密钥，且易被误传大体积 dump）
+.env
+.env.*
+!.env.example
+
+# 依赖与包管理缓存（体积大）
+node_modules/
+**/node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+npm-cache/
+.pnpm-store/
+
+# 前端构建产物
+.next/
+out/
+dist/
+build/
+.nuxt/
+.output/
+.svelte-kit/
+coverage/
+*.tsbuildinfo
+
+# Solidity / Foundry（编译与缓存体积大）
+cache/
+**/broadcast/*/31337/
+**/broadcast/**/dry-run/
+
+# Python（若子项目使用）
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# 常见大体积二进制 / 媒体（按需删改）
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wmv
+*.webm
+*.flac
+*.wav
+*.7z
+*.rar
+*.iso
+*.dmg
+*.img
+*.vmdk
+*.ova
+*.qcow2
+# 常见体积很大的压缩包；若需提交小型 zip/tar.gz 请删除或改写下列行
+*.zip
+*.tar.gz
+*.tgz
